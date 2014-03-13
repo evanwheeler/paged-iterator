@@ -109,7 +109,7 @@ describe( 'PagedIterator#next', function() {
                 result.length.should.equal( 20 );
                 
                 for( var j = 0; j < 20; ++j ) 
-                    result[j].should.equal( j + 1 );
+                    should( result[j] ).equal( j + 1 );
                 
                 done();
             } );
@@ -134,7 +134,7 @@ describe( 'PagedIterator#next', function() {
                 result.length.should.equal( 25 );
                 var j;
                 for( j = 0; j < 20; ++j ) 
-                    result[j].should.equal( j + 1 );
+                    should( result[j] ).equal( j + 1 );
                     
                 for( j = 20; j < 25; ++j ) { 
                     should( result[j] ).be.null;

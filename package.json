@@ -1,6 +1,6 @@
 {
   "name": "paged-iterator",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "An iterator for traversing pages of results item by item",
   "main": "index.js",
   "scripts": {
